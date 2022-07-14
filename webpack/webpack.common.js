@@ -10,6 +10,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "..", "dist"),
     assetModuleFilename: "images/[hash][ext][query]",
+    clean: true
   },
   module: {
     rules: [
@@ -31,6 +32,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "..", "src", "index.html"),
+      inject: "body",
     }),
   ],
 };

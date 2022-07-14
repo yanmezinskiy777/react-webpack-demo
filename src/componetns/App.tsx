@@ -1,5 +1,5 @@
-import { FC } from "react";
-import ReactPng from "../assets/react-logo.png";
+import { FC } from 'react'
+import ReactPng from '../assets/react-logo.png'
 
 const App: FC = () => {
   return (
@@ -7,7 +7,7 @@ const App: FC = () => {
       <h1>Typescript react</h1>
       <img src={ReactPng} alt="react" width={200} />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
